@@ -29,7 +29,7 @@ app.get('/article3',function(req,res){
 });
 
 app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'DSC01955.jpg'));
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 
