@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 var articles = {
   
   article1: {
-      title:`Articl1` ,
+      title:`Article1` ,
       date:`25th oct,2016` ,
       heading:`Article One` ,
       content:
@@ -64,12 +64,13 @@ function createTemplate(data)
             ${date}
         </div>
         <div>
-            ${content};
+            ${content}
         </div>
       
       </div>
      </body>
 </html> ` ; 
+return htmlTemplate;
     
 }
 
