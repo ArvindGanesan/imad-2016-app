@@ -1,12 +1,12 @@
 //Counter code
-var button = getElementById(`counter`);
+var button = document.getElementById(`counter`);
 button.onclick = function() {
     
    //Create request
      var request = new XMLHttpRequest();
      
    //request function
-     request.onreadystatechange = functon () {
+     request.onreadystatechange = function () {
          if(request.readystate === XMLHttpRequest.DONE)
            {
                //Take  an action
@@ -16,11 +16,13 @@ button.onclick = function() {
                 var span = document.getElementById(`count`);
                 span.innerHTML = counter.toString();
            }
+           }
           //no action
          
      };
    //make request
-    request.open(`GET`,)
+    request.open(`GET`,`http://arvindganesan.imad.hasura-app.io/counter` , true);
+    request.send(null);
     
     
 };
